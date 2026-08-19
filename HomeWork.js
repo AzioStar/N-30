@@ -62,3 +62,98 @@
 // } else {
 //     console.log("NO");
 // }
+
+//============================================================================
+
+// let n = 9220
+// let xona = 1
+
+// while (Math.floor(n / (xona * 10)) > 0) {
+//     xona *= 10
+// }
+
+// let x = xona
+// while (x >= 1) {
+//     let raqam = Math.floor((n / x) % 10)
+//     if (raqam !== 9) {
+//         n += (9 - raqam) * x
+//         break
+//     }
+//     x = Math.floor(x / 10)
+// }
+// console.log(n)
+
+//===================================================================================
+
+// let n = 9996
+// let reverse = 0
+// while(n){
+//     reverse = reverse * 10 + n % 10
+//     if(n%10 == 0){
+
+//     }
+//     n = Math.floor(n / 10)
+// }
+// let correct = 0
+// let bool = true
+
+// while(reverse){
+//     if(reverse % 10 != 9 && bool){
+//         correct = correct * 10 + 9
+//         bool = false
+//     }else{
+//         correct = correct * 10 + reverse % 10
+//     }
+//     reverse = Math.floor(reverse / 10)
+// }
+// console.log(correct)
+
+//=======================================================================================
+
+// let n = 24
+// let count = 0
+
+// while(true){
+//     if(n < 3){
+//         count = -1
+//         break
+//     }
+//     if(n % 5 == 0){
+//         count += n / 5
+//         break
+//     }else{
+//         n = n - 3
+//         count += 1
+//     }
+// }
+// console.log(count)
+
+//======================================================================================
+
+// let n = 123321
+// let son = n
+// let count = 0
+// let sum = 0
+// while(n){
+//     n = Math.floor(n / 10)
+//     count += 1
+// }
+
+// if(count != 6){
+//     console.log("NO")
+// }else{
+//     while(son){
+//         if(count > 3){
+//             sum += son % 10
+//             count -= 1
+//         }else{
+//             sum -= son % 10
+//         }
+//         son = Math.floor(son / 10)
+//     }
+// }
+// if(sum == 0){
+//     console.log("YES")
+// }else{
+//     console.log("NO")
+// }
